@@ -5,6 +5,8 @@ print("\033[93m=" * 38)
 
 # pseudocode
 # import a text file
+import csv
+
 # create the class that will represent the app
 # establish the functions
 
