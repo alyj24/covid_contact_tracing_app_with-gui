@@ -19,3 +19,14 @@ class ContactTracingApp:
             writer = csv.writer(file)
             writer.writerow([name, address, birthday, gender, phone, email, exposed, symptoms])
 
+    '''Extract data from the CSV file and look for a corresponding name.'''
+    def search_entry(self, name):
+        entries = []
+        with open("covid-19_contact_tracing_app.csv", "r") as file:
+            reader = csv.reader(file)
+            for row in reader:
+
+                '''Verify if the name corresponds and display a message indicating whether the entry is located or not.'''
+                if row[0] == name:
+                    entries.append(row)
+        return entries
