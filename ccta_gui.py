@@ -1,6 +1,9 @@
 # pseudocode
 # import the tkinter
+import tkinter as tk
+
 # import the existed program for the new class
+
 # implement the functions of the class with GUI
 # establish the constructor
 # construct the labels and methods
