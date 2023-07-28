@@ -90,6 +90,19 @@ class C19CTAppGUI:
         print("The information entry is submitted successfully.")
 
     # search entry
+    def search_entry(self):
+        name = self.name_entry.get()
+
+        # provide instance
+        entry = self.contact_tracing.search_entry(name)
+
+        if entry:
+            print("Submitted Information Found:")
+            for item in entry:
+                print(item)
+        else:
+            print("Submitted Information not found")
+            
     # provide instance
     # check errors
     # run the program
