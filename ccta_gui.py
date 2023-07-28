@@ -6,7 +6,7 @@ import tkinter as tk
 from main import Covid19ContactTracingApp
 
 # implement the functions of the class with GUI
-class Covid19ContactTracingApp:
+class C19CTAppGUI:
     # establish constructor
     def __init__(self, root):
         self.root = root
@@ -69,8 +69,9 @@ class Covid19ContactTracingApp:
 
     self.add_button.grid(row=8, column=0, padx=10, pady=5)
     self.search_button.grid(row=8, column=1, padx=10, pady=5)
-    
+
     # provide instance
+    self.contact_tracing = C19CTAppGUI
     # add entry
     # search entry
     # provide instance
