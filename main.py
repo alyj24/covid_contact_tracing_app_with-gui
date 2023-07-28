@@ -11,6 +11,11 @@ import csv
 class ContactTracingApp:
     def __init__(self):
         pass
-    
-# establish the functions
+    # establish the functions
+    '''Record the gathered data in a CSV file.'''
+
+    def add_entry(self, name, bday, gender, phone, email, address, exposed, symptoms):
+        with open("covid-19_contact_tracing_app.csv", "a", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow([name, address, birthday, gender, phone, email, exposed, symptoms])
 
