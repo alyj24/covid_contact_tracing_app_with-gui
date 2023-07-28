@@ -112,5 +112,11 @@ class C19CTAppGUI:
         self.email_entry.delete(0, tk.END)
         self.exposed_entry.delete(0, tk.END)
         self.symptoms_entry.delete(0, tk.END)
-                 
+
     # run the program
+    if __name__ == "__main__":
+        root = tk.Tk()
+
+        app = C19CTAppGUI(root)
+
+        root.mainloop()
