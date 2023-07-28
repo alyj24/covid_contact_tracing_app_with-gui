@@ -39,6 +39,9 @@ class Covid19ContactTracingApp:
     self.symptoms_entry = tk.Entry(root)
 
     # signify buttons
+    self.add_button = tk.Button(root, text="Add Entry", command=self.add_entry)
+    self.search_button = tk.Button(root, text="Search Entry", command=self.search_entry)
+
     # initiate labels
     # provide instance
     # add entry
