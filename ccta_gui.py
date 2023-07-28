@@ -26,7 +26,10 @@ class Covid19ContactTracingApp:
     self.gender_label = tk.Label(root, text="Gender: ", font=("Times New Roman", 11, "bold"), bg="#EEA2AD")
     self.gender_entry = tk.Entry(root)
 
-    
+    self.number_label = tk.Label(root, text="Phone Number: ", font=("Times New Roman", 11, "bold"), bg="#F08080")
+    self.number_entry = tk.Entry(root)
+
+
 # provide instance
 # add entry
 # search entry

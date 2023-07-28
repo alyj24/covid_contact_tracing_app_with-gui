@@ -14,10 +14,10 @@ class ContactTracingApp:
     # establish the functions
     '''Record the gathered data in a CSV file.'''
 
-    def add_entry(self, name, bday, gender, phone, email, address, exposed, symptoms):
+    def add_entry(self, name, birthday, gender, number, email, address, exposed, symptoms):
         with open("covid-19_contact_tracing_app.csv", "a", newline="") as file:
             writer = csv.writer(file)
-            writer.writerow([name, address, birthday, gender, phone, email, exposed, symptoms])
+            writer.writerow([name, address, birthday, gender, number, email, exposed, symptoms])
 
     '''Extract data from the CSV file and look for a corresponding name.'''
     def search_entry(self, name):
