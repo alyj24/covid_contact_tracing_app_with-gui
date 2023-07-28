@@ -43,6 +43,33 @@ class Covid19ContactTracingApp:
     self.search_button = tk.Button(root, text="Search Entry", command=self.search_entry)
 
     # initiate labels
+    self.name_label.grid(row=0, column=0, padx=10, pady=5, sticky=tk.W)
+    self.name_entry.grid(row=0, column=1, pady=10, padx=5)
+
+    self.address_label.grid(row=5, column=0, padx=10, pady=5, sticky=tk.W)
+    self.address_entry.grid(row=5, column=1, pady=10, padx=5)
+
+    self.birthday_label.grid(row=1, column=0, padx=10, pady=5, sticky=tk.W)
+    self.birthday_label_entry.grid(row=1, column=1, pady=10, padx=5)
+
+    self.gender_label.grid(row=2, column=0, padx=10, pady=5, sticky=tk.W)
+    self.gender_entry.grid(row=2, column=1, pady=10, padx=5)
+
+    self.phone_label.grid(row=3, column=0, padx=10, pady=5, sticky=tk.W)
+    self.phone_entry.grid(row=3, column=1, pady=10, padx=5)
+
+    self.email_label.grid(row=4, column=0, padx=10, pady=5, sticky=tk.W)
+    self.email_entry.grid(row=4, column=1, pady=10, padx=5)
+
+    self.exposed_label.grid(row=6, column=0, padx=10, pady=5, sticky=tk.W)
+    self.exposed_entry.grid(row=6, column=1, pady=10, padx=5)
+
+    self.symptoms_label.grid(row=7, column=0, padx=10, pady=5, sticky=tk.W)
+    self.symptoms_entry.grid(row=7, column=1, pady=10, padx=5)
+
+    self.add_button.grid(row=8, column=0, padx=10, pady=5)
+    self.search_button.grid(row=8, column=1, padx=10, pady=5)
+    
     # provide instance
     # add entry
     # search entry
