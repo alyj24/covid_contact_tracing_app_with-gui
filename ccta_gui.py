@@ -34,6 +34,9 @@ class Covid19ContactTracingApp:
 
     self.exposed_label = tk.Label(root, text="Haye you ever been exposed recently with COVID-19 Patients? ", font=("Times New Roman", 11, "bold"), bg="#FFF68F")
     self.exposed_entry = tk.Entry(root)
+
+    self.symptoms_label = tk.Label(root, text="Do you experience currently symptoms of COVID-19? ", font=("Times New Roman", 11, "bold"), bg="#98F5FF")
+    self.symptoms_entry = tk.Entry(root)
     
 # provide instance
 # add entry
