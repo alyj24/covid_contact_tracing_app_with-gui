@@ -16,6 +16,9 @@ class Covid19ContactTracingApp:
     # construct the labels and methods
     self.name_label = tk.Label(root, text="Name: ", font=("Times New Roman", 11, "bold"), bg="#8470FF")
     self.name_entry = tk.Entry(root)
+
+    self.address_label = tk.Label(root, text="Address: ", font=("Times New Roman", 11, "bold"), bg="#FFB6C1")
+    self.address_entry = tk.Entry(root)
     
 # provide instance
 # add entry
