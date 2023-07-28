@@ -72,7 +72,23 @@ class C19CTAppGUI:
 
     # provide instance
     self.contact_tracing = C19CTAppGUI
+
     # add entry
+    def add_entry(self):
+        name = self.name_entry.get()
+        address = self.address_entry.get()
+        birthday = self.birthday_entry.get()
+        gender = self.gender_entry.get()
+        phone = self.phone_entry.get()
+        email = self.email_entry.get()
+        exposed = self.exposed_entry.get()
+        symptoms = self.symptoms_entry.get()
+
+        self.contact_tracing.add_entry(name, address, birthday, gender, phone, email, exposed, symptoms)
+
+        self.clear_entries()
+        print("The information entry is submitted successfully.")
+
     # search entry
     # provide instance
     # check errors
