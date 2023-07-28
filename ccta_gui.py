@@ -102,7 +102,15 @@ class C19CTAppGUI:
                 print(item)
         else:
             print("Submitted Information not found")
-            
-    # provide instance
+
     # check errors
+    def clear_entries(self):
+        self.name_entry.delete(0, tk.END)
+        self.birthday_label_entry.delete(0, tk.END)
+        self.gender_entry.delete(0, tk.END)
+        self.phone_entry.delete(0, tk.END)
+        self.email_entry.delete(0, tk.END)
+        self.exposed_entry.delete(0, tk.END)
+        self.symptoms_entry.delete(0, tk.END)
+                 
     # run the program
