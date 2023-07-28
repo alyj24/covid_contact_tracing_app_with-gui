@@ -13,7 +13,10 @@ class Covid19ContactTracingApp:
         self.root.title("COVID-19 Contact Tracing App")
         self.root.geometry("400x200")
 
-# construct the labels and methods
+    # construct the labels and methods
+    self.name_label = tk.Label(root, text="Name: ", font=("Times New Roman", 11, "bold"), bg="#8470FF")
+    self.name_entry = tk.Entry(root)
+    
 # provide instance
 # add entry
 # search entry
