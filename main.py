@@ -16,7 +16,7 @@ class CCTracingApp:
     # establish the functions
     '''Record the gathered data in a CSV file.'''
     def add_entry(self, name, bday, gender, phone, email, address, date, result):
-        with open("contact_tracing.csv", "a", newline="") as file:
+        with open("covid_contact_tracing.csv", "a", newline="") as file:
             writer = csv.writer(file)
             writer.writerow([name, bday, gender, phone, email, address, date, result])
 
