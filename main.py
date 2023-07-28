@@ -8,5 +8,9 @@ print("\033[93m=" * 38)
 import csv
 
 # create the class that will represent the app
+class ContactTracingApp:
+    def __init__(self):
+        pass
+    
 # establish the functions
 
